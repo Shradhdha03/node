@@ -41,3 +41,10 @@ process.stdin.on("data",(data)=>{
 process.on("exit",()=>{
     process.stdout.write(`\n${ans[0]} ${ans[1]} \n \n`);
 });
+
+
+var sum= 0;
+for (let index = 2; index < (process.argv).length; index++) {
+    sum += Number(array[index]);
+}
+console.log(sum);
